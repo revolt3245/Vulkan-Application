@@ -150,12 +150,15 @@
     <ClCompile Include="Constant.cpp" />
     <ClCompile Include="QueueFamilyIndices.cpp" />
     <ClCompile Include="SwapChainSupportDetails.cpp" />
+    <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constant.h" />
     <ClInclude Include="HelloTriangleApplication.h" />
     <ClInclude Include="QueueFamilyIndices.h" />
     <ClInclude Include="SwapChainSupportDetails.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="Vertices.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

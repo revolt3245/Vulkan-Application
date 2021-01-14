@@ -17,6 +17,7 @@
 #include "QueueFamilyIndices.h"
 #include "SwapChainSupportDetails.h"
 #include "Constant.h"
+#include "Vertices.h"
 
 class HelloTriangleApplication
 {
@@ -82,6 +83,9 @@ private:
 	void cleanupSwapChain();
 	static void onWindowResized(GLFWwindow* window, int width, int height);
 
+	void createVertexBuffer();
+	uint32_t findMemoryType(uint32_t typeFilter, VkMemoryPropertyFlags properties);
+
 	GLFWwindow* window;
 	VkInstance instance;
 	VkDebugReportCallbackEXT callback;
@@ -112,4 +116,7 @@ private:
 
 	VkSemaphore imageAvailableSemaphore;
 	VkSemaphore renderFinishedSemaphore;
+
+	VkBuffer vertexBuffer;
+	VkDeviceMemory vertexBufferMemory;
 };
