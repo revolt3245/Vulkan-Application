@@ -449,8 +449,8 @@ void HelloTriangleApplication::createImageViews() {
 }
 
 void HelloTriangleApplication::createGraphicsPipeline() {
-	auto vertShaderCode = readFile("../shader/vert.spv");
-	auto fragShaderCode = readFile("../shader/frag.spv");
+	auto vertShaderCode = readFile("C:/Users/kmh98/source/repos/Vulkan Application1/shader/vert.spv");
+	auto fragShaderCode = readFile("C:/Users/kmh98/source/repos/Vulkan Application1/shader/frag.spv");
 
 	VkShaderModule vertShaderModule;
 	VkShaderModule fragShaderModule;
