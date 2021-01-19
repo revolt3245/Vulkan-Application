@@ -5,6 +5,9 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
+#include <glm/gtc/matrix_transform.hpp>
+#include <chrono>
+
 #include <iostream>
 #include <stdexcept>
 #include <functional>
@@ -18,6 +21,7 @@
 #include "SwapChainSupportDetails.h"
 #include "Constant.h"
 #include "Vertices.h"
+#include "UniformBufferObject.h"
 
 class HelloTriangleApplication
 {
@@ -91,6 +95,13 @@ private:
 
 	void createIndexBuffer();
 
+	void createDescriptorSetLayout();
+	void createUniformBuffer();
+	void updateUniformBuffer();
+
+	void createDescriptorPool();
+	void createDescriptorSet();
+
 	GLFWwindow* window;
 	VkInstance instance;
 	VkDebugReportCallbackEXT callback;
@@ -110,6 +121,8 @@ private:
 	std::vector<VkImageView> swapChainImageViews;
 	
 	VkRenderPass renderPass;
+
+	VkDescriptorSetLayout descriptorSetLayout;
 	VkPipelineLayout pipelineLayout;
 
 	VkPipeline graphicsPipeline;
@@ -126,4 +139,9 @@ private:
 	VkDeviceMemory vertexBufferMemory;
 	VkBuffer indexBuffer;
 	VkDeviceMemory indexBufferMemory;
+	VkBuffer uniformBuffer;
+	VkDeviceMemory uniformBufferMemory;
+
+	VkDescriptorPool descriptorPool;
+	VkDescriptorSet descriptorSet;
 };
