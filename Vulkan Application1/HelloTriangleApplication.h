@@ -139,8 +139,12 @@ private:
 	VkDeviceMemory vertexBufferMemory;
 	VkBuffer indexBuffer;
 	VkDeviceMemory indexBufferMemory;
-	VkBuffer uniformBuffer;
-	VkDeviceMemory uniformBufferMemory;
+
+	//VkBuffer uniformBuffer;
+	//VkDeviceMemory uniformBufferMemory;
+
+	std::vector<VkBuffer>uniformBuffers;
+	std::vector<VkDeviceMemory> uniformBufferMemories;
 
 	VkDescriptorPool descriptorPool;
 	VkDescriptorSet descriptorSet;

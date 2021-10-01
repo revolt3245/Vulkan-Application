@@ -1,5 +1,1 @@
-﻿  HelloTriangleApplication.cpp
-C:\Users\kmh98\source\repos\Vulkan Application1\Vulkan Application1\HelloTriangleApplication.cpp(379,31): warning C4838: 'int'에서 'uint32_t'(으)로의 변환에는 축소 변환이 필요합니다.
-C:\Users\kmh98\source\repos\Vulkan Application1\Vulkan Application1\HelloTriangleApplication.cpp(379,38): warning C4838: 'int'에서 'uint32_t'(으)로의 변환에는 축소 변환이 필요합니다.
-LINK : warning LNK4098: 'MSVCRT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
-  Vulkan Application1.vcxproj -> C:\Users\kmh98\source\repos\Vulkan Application1\x64\Debug\Vulkan Application1.exe
+﻿  Vulkan Application1.vcxproj -> C:\Users\KMH\Source\Repos\revolt3245\Vulkan-Application\x64\Debug\Vulkan Application1.exe

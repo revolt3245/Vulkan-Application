@@ -14,7 +14,7 @@ const int HEIGHT = 600;
 
 const std::vector<const char*> validationLayers = {
 	//"VK_LAYER_LUNARG_standard_validation",
-	"VK_LAYER_AMD_switchable_graphics"
+	"VK_LAYER_NV_optimus"
 };
 
 const std::vector<const char*> deviceExtensions = {

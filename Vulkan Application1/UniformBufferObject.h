@@ -9,3 +9,6 @@ struct UniformBufferObject
 	glm::mat4 proj;
 };
 
+struct UniformBufferDynamicObject {
+	glm::mat4 model;
+};
